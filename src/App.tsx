@@ -4,10 +4,13 @@ import axios from "axios"
 import "./App.css"
 
 function App() {
-  const CLIENT_ID = process.env.CLIENT_ID
-  const REDIRECT_URI = process.env.REDIRECT_URI
+  const CLIENT_ID = "1b497b1025834a49b575bec43c66ec44"
+  const REDIRECT_URI =
+    "https://lyrical-spotify.herokuapp.com/" || "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
+
+  console.log("CLIENedcddrsT ID...", process.env)
 
   const [token, setToken] = useState("")
   const [searchKey, setSearchKey] = useState("")
